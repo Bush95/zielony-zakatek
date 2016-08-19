@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zielony Zakątek</title>
+    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-touch-icon-57x57.png" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css"> </head>
+<body>
+    <header class="page-header container">
+        <a href="#" class="header-logo"><img src="images/page_logo.png" class="header-logo" alt="Zielony Zakątek logo"></a>
+        <nav class="page-nav">
+            <ul>
+                <li><a href="#about">O nas</a></li>
+                <li><a href="#projects">Projekty</a></li>
+                <li><a href="#">Historia</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <button id="hamburger" type="button" title="Rozwiń menu">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </button>
+    </header>
+    <div class="slider">
+        <div class="slider_slide_1"> <img src="images/slider/slider_1.jpg" alt="Palmy na tle nieba"> </div>
+        <div class="slider_slide_2"> <img src="images/slider/slider_2.jpg" alt="Droga przez łake"> </div>
+        <div class="slider_slide_3"> <img src="images/slider/slider_3.jpg" alt="Samotne drzewo"> </div>
+    </div>
+    <section class="about container">
+        <h2 class="section-header">O nas</h2>
+        <div class="about_wrapper">
+            <div class="about_content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, corporis quidem magni veniam suscipit nemo in illo deleniti expedita natus, iste quis cum rerum beatae ex sapiente quaerat officia dolore quos harum at facilis eligendi reiciendis quasi perferendis? Repellendus, in.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus nam veniam pariatur eligendi, obcaecati, quo consectetur atque necessitatibus. Nam velit, odio in aperiam, fuga vero! Amet blanditiis, quas non accusantium!</p>
+            </div>
+            <div class="about_image"> <img src="images/simple_img.jpg" alt=""> </div>
+        </div>
+    </section>
+    <section class="projects container">
+        <h2 class="section-header">Projekty</h2>
+        <div class="projects_wrapper">
+            <div class="projects_content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas error ad impedit ab obcaecati dicta? Minus excepturi voluptas omnis maiores alias cupiditate eos eligendi dolores. Saepe officia aliquid voluptate, facilis placeat laborum autem minus vel? Debitis, sunt delectus. Amet doloremque eos cupiditate laboriosam quod, id vero blanditiis expedita provident corporis?</p>
+            </div> <a href="#" class="projects_button" title="Sprawdź nasze projekty">Zobacz nasze aktualne projekty</a> </div>
+    </section>
+    <section class="contact container">
+        <h2 class="section-header">Kontakt</h2> <address>
+            <p class="contact_brand">Zielony Zakątek</p>
+            ul. B. Limanowskiego 9 lok.27<br>
+            43-400 Cieszyn<br>
+            tel. (+48) 22 398 32 03<br>
+            tel. (+48) 532 09 04 03<br>
+            e-mail: info@zielonyzakatek.org.pl
+        </address>
+        <form id="contact_form" action="">
+            <input type="text" placeholder="Imię" name="name" required>
+            <input type="text" placeholder="Nazwisko" name="surname" required>
+            <input type="email" placeholder="Adres e-mail" name="email" required>
+            <input type="tel" maxlength="9" placeholder="Numer telefonu" name="email">
+            <textarea name="text" placeholder="Treść wiadomości" required></textarea>
+            <button type="submit" class="contact-form_button" title="Wyślij wiadomość">Wyślij wiadomość</button>
+        </form>
+    </section>
+    <script src="scripts/jquery-3.1.0.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.header-logo {
+    display: block;
+    width: 140px;
+    height: 60px;
+}
+.header-logo img {
+    width: 100%;
+    height: auto;
+}
+.page-nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: #FFFFFF;
+}
+.page-nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.page-nav li a{
+    display: block;
+    color: #78AC48;
+    text-decoration: none;
+    padding: 20px;
+    text-transform: uppercase;
+    font: "Lato", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    border-bottom: 2px solid #F2F2F2;
+}
+#hamburger {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+}
+
+#hamburger span {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #78AC48;
+    border-radius: 10px;
+}
+
+#hamburger .top,
+#hamburger .bottom {
+    position: absolute;
+    left: 0;
+    -webkit-transition:-webkit-transform 300ms,  top 300ms 300ms;
+            transition:transform 300ms,  top 300ms 300ms; 
+}
+
+#hamburger .top {
+    top: 0;
+}
+#hamburger .bottom {
+    top: 19px;
+}
+#hamburger .middle {
+    -webkit-transition: opacity 200ms;
+            transition: opacity 200ms;
+}
+
+#hamburger.nav-open .middle{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+#hamburger.nav-open .top,
+#hamburger.nav-open .bottom {
+    -webkit-transition: top 300ms, -webkit-transform 300ms 300ms;
+            transition: top 300ms, transform 300ms 300ms; 
+    top: 10px;
+}
+#hamburger.nav-open .top{
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+}
+#hamburger.nav-open .bottom{
+    -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+}
+.slider [class^="slider_slide_"]:not(.slider_slide_1) {
+    display: none;
+}
+
+.slider [class^="slider_slide_"]>img {
+    width: 100%;
+}
+
+
+.section-header {
+    padding: 12px 0;
+    margin-bottom: 26px;
+    color: #78AC48;
+    text-transform:uppercase;
+    font-family: "Lato";
+    font-weight: 700;
+    border-bottom: 2px solid #78AC48;
+}
+
+section p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #353535;
+}
+
+
+.about {
+    box-sizing: border-box;
+}
+
+.about_image img{
+    width: 100%;
+    margin: 10px 0;
+}
+
+.projects {
+    margin-bottom: 20px;
+}
+.projects_button {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Lato";
+    font-weight: 700;
+    background-color: #75ad4c;
+    border: solid 5px #498022;
+    border-radius: 10px;
+    padding: 22px 10px;
+    color: #FFFFFF;
+}
+
+#contact_form  input,
+#contact_form  textarea{
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    border: solid 1px #E2E2E2;
+    border-radius: 5px;
+}
+
+#contact_form  textarea {
+    resize: none;
+    height: 120px;
+}
+
+#contact_form button {
+    border: none;
+    padding: 16px 28px;
+    color: #FFFFFF;
+    background-color: #75ad4c;
+    border-radius: 5px;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.contact address {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    color: #303030;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.contact_brand {
+    color: #2D2D2D;
+    font-weight:800;
+    margin: 14px 0;
+}
