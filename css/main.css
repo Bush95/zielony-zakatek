@@ -7,6 +7,11 @@ body, html {
     padding: 0 20px;
     box-sizing: border-box;
 }
+.page-h,
+.nav-h,
+.slider-h {
+    display: none;
+}
 .header-logo {
     display: inline-block;
     width: 140px;
@@ -96,11 +101,11 @@ body, html {
     -webkit-transform: rotateZ(-45deg);
             transform: rotateZ(-45deg);
 }
-.slider [class^="slider_slide_"]:not(.slider_slide_1) {
+#slider [class^="slider_slide_"]:not(.slider_slide_1) {
     display: none;
 }
 
-.slider [class^="slider_slide_"]>img {
+#slider [class^="slider_slide_"]>img {
     width: 100%;
 }
 
@@ -212,6 +217,22 @@ section p {
     .page-nav li a {
         font-weight: 600;
         border-bottom: none;
+    }
+    #slider {
+        position: relative;
+    }
+    #slider [class^="slider_slide_"]:not(.slider_slide_1){
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    #slider [class^="slider_slide_"] {
+        opacity: 0;
+    }
+    #slider .slider_slide_1 {
+        opacity: 1;
     }
     .about_wrapper::after {
         display: table;
@@ -333,11 +354,12 @@ section p {
         color: #498022;
         box-shadow:inset 0 0 0 2px #498022;
     }
-    .projects_button:active {
+    .projects_button:active,
+    #contact_form button:active {
         background-color: #DBF0CB;
+        color: #000000;
     }
     #contact_form button:active{
-        background-color: #DBF0CB;
         box-shadow:inset 0 0 0 4px #498022;
     }
     #contact_form button{
